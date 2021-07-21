@@ -1,0 +1,16 @@
+checkmypass:
+	1.PASSWORD API(url)::to given url we pass over password, throught this we find that how many users was check over password or try to hack it
+	now what we gonna do,, we just convert over password in 'md5'  hash algo rithm by google website"https://www.miraclesalad.com/webtools/md5.php".
+	it give us converted md5 versioned password throught out this we not gonna give actuall charcter password to some random website by checking it(random websute like given in url)
+
+	2.CREATE FUNCTION LIKE"DEF REQUESTES_API_DATA(QUERY_CHAR) & DEF PWEND_API_CHECK(PASSWORD)::in this we gonna put over url and respornse code by checking the actuall password in function,'request_api_check' indicate the api who gonna rquest to check and'query_char'indicate the dynamic password checker string.
+	and 'pwend_api-check'convert passwordinto sha1 hash function.
+
+	3.IMPORT HASHLIB:a hashlib library do to cob=nvert our given password into sha1 .we used in it to second function 'pwend_apicheck(password)'.in it we saw
+	'hashdigest'which convert our code into doblue length of converted oassword length in hexadecimal format.
+
+	4.DEF READ-RES(RESPONSE):this function give each and every response text indiviually by"response.text".
+
+	5.DEF GET_PASSWORD_LEACKS_COUNT(HASHES,HASH_TO_CHECK):in this function we gonna check the leak password count by seprating them in ":"manner.by using splitlines in given tuple.(note:hashes is passed in tuple.)
+
+	
